@@ -20,10 +20,10 @@ connectDB()
 // Middleware
 
 app.use(cors({
-  origin: ['https://ieeeweek.netlify.app', 'http://localhost:3000'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
+  // origin: ['https://ieeeweek.netlify.app', 'http://localhost:3000','https://ieeeweek2025.onrender.com'],
+  // methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  // allowedHeaders: ['Content-Type', 'Authorization'],
+  // credentials: true
 }));
 app.use(express.json());
 
