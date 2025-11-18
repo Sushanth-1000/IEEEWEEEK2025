@@ -1,16 +1,17 @@
-const API_URL = 'https://ieeeweek2025.onrender.com';  // Make sure this matches your Render URL
+const API_URL = 'https://ieeeweek2025.onrender.com';
 
 const fetchEvents = async () => {
-  const apiUrl = `${API_URL}/api/events`;  // Moved outside try-catch
+  let apiUrl;  // Declare here
   
   try {
+    apiUrl = `${API_URL}/api/events`;  // Assign value here
     console.log('🔵 [1/3] Starting fetch to:', apiUrl);
     
     const response = await fetch(apiUrl, {
       headers: {
         'Content-Type': 'application/json',
       },
-      credentials: 'include'  // Add this if using cookies/auth
+      credentials: 'include'
     });
     
     console.log('🟡 [2/3] Response status:', response.status);
@@ -33,7 +34,7 @@ const fetchEvents = async () => {
     console.error('🔥 Fetch failed:', {
       message: error.message,
       name: error.name,
-      url: apiUrl,  // Now this will work
+      url: apiUrl || 'URL not set',  // Now this will work
       stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
     throw error;
