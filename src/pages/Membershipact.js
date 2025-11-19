@@ -41,8 +41,8 @@ const Membershipone = () => {
             industry professionals, further enriching the learning experience.
           </p> */}
           <center>
-          <a href="https://forms.gle/7Wjjo2mgtRzUfmwz5" target="_blank" rel="noopener noreferrer">
-            <button className="know-more-btn">Register Now!</button>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <button className="know-more-btn">Coming Soon</button>
           </a>
           </center>
           <br />
