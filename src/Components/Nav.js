@@ -32,7 +32,7 @@ function Navbaring() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className='justify-content-end'>
           <Nav className="my-1 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-            {['/home','/events','/sponsor','/meet', '/membership', '/contact'].map((href, index) => (
+            {['/home','/events','/schedule','/sponsor','/meet', '/membership', '/contact'].map((href, index) => (
               <Nav.Link 
                 key={href}
                 href={href} 
