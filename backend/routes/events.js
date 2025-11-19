@@ -30,8 +30,7 @@ router.post('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const event = await EventSchema.findById(req.params.id);
-    // Fixed: Check if event exists, rather than checking undefined variables
-    if (!event) {
+    if (!title || !description || !date || !venue) {
       return res.status(404).json({ message: 'Event not found' });
     }
     res.json(event);

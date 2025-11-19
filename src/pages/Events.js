@@ -40,10 +40,10 @@ const Events = () => {
         setSelectedEvent(null);
     };
 
-
+    // Separate events into technical and non-technical categories
     const technicalEvents = events.filter(event => event.category === "Technical");
+    const nonTechnicalEvents = events.filter(event => event.category === "Non-Technical");
 
-    const nonTechnicalEvents = events.filter(event => event.category !== "Technical");
     if (loading) return <div>Loading events...</div>;
     if (error) return <div>Error: {error}</div>;
 
