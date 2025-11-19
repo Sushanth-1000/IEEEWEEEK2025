@@ -67,7 +67,7 @@ const Sponsors = () => {
   useEffect(() => {
     const fetchSponsors = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/sponsors');
+        const response = await axios.get('https://ieeeweek2025.onrender.com/api/sponsors');
         const sponsorsData = response.data;
         
         // Group sponsors by category

@@ -14,7 +14,7 @@ html, body {
 
 footer {
   margin-top: auto;
-  background: rgba(35, 110, 101, 0.9); /* Solid dark teal background with some transparency */
+  background: rgba(0, 0, 0, 0.9); /* Solid dark teal background with some transparency */
   color: white; /* Text color */
   transition: all 0.3s ease;
   padding: 1.5rem 0;

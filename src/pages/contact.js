@@ -46,12 +46,12 @@ const ContactUs = () => {
           <div className="direct-contact">
             <h3>Get In Touch</h3>
             <div className="contact-person">
-              <div className="contact-name">Uday Kumar</div>
-              <a href="tel:998884949" className="contact-number">+91 99888 49494</a>
+              <div className="contact-name">Uday Ramageri</div>
+              <a href="tel:74839 39765" className="contact-number">+91 99888 49494</a>
             </div>
             <div className="contact-person">
               <div className="contact-name">Ninaada Ranga</div>
-              <a href="tel:9498584940" className="contact-number">+91 94985 84940</a>
+              <a href="tel:99860 23708" className="contact-number">+91 94985 84940</a>
             </div>
             <div className="contact-email">
               <span>Email us at: </span>
