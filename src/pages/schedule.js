@@ -12,7 +12,7 @@ const Schedule = () => {
     const fetchSchedule = async () => {
       try {
         // 1. Fetch all events
-        const response = await axios.get('https://ieeeweek2025.onrender.com/api/events');
+        const response = await axios.get('https://ieeeweek2025.onrender.com/api/schedule');
         const events = response.data;
 
         // 2. Group events by date
