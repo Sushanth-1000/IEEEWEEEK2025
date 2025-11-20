@@ -12,7 +12,7 @@ const SponsorSchema = new mongoose.Schema({
   logo: {
     type: String,
     required: true,
-    get: (v) => v.startsWith('http') ? v : `https://ieee-week.onrender.com/images/${v}`
+    get: (v) => v.startsWith('http') ? v : `https://ieeeweek2025.onrender.com/images/${v}`
   },
   category: {
     type: String,
