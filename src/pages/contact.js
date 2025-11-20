@@ -47,11 +47,11 @@ const ContactUs = () => {
             <h3>Get In Touch</h3>
             <div className="contact-person">
               <div className="contact-name">Uday Ramageri</div>
-              <a href="tel:74839 39765" className="contact-number">+91 99888 49494</a>
+              <a href="tel:+91 74839 39765" className="contact-number">+91 74839 39765</a>
             </div>
             <div className="contact-person">
               <div className="contact-name">Ninaada Ranga</div>
-              <a href="tel:99860 23708" className="contact-number">+91 94985 84940</a>
+              <a href="+91 99860 23708" className="contact-number">+91 99860 23708</a>
             </div>
             <div className="contact-email">
               <span>Email us at: </span>

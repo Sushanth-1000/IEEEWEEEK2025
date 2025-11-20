@@ -70,7 +70,7 @@ const pulseAnimation = keyframes`
 
 
 const StyledWrapper = styled.div`
-  .gradient-border {
+   .gradient-border {
     width: 400px; 
     height: 400px;
     padding: 5px;
@@ -94,16 +94,6 @@ const StyledWrapper = styled.div`
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
-  }
-    .event-title {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #ffffff;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    line-height: 1.3;
-    text-shadow: 0 0 3px rgba(0,0,0,0.8);
   }
 
   .content {
@@ -200,7 +190,8 @@ const StyledWrapper = styled.div`
   }
 
   .register-button {
-    background: linear-gradient(90deg, #1d2258, #5a90dd, #c7c8e5);
+    background: linear-gradient(90deg, #1d2258, #5a90dd, #c7c8e5
+);
     color: black;
     border: none;
     font-weight: 1000;
@@ -234,7 +225,7 @@ const StyledWrapper = styled.div`
     }
 
     .event-title {
-      font-size: 0.5rem;
+      font-size: 0.95rem;
     }
 
     .event-description {
@@ -246,11 +237,11 @@ const StyledWrapper = styled.div`
       padding: 8px 10px;
     }
   }
-cd 
+
   @media (max-width: 768px) {
     .gradient-border {
-      width: 130px;
-      height: 150px;
+      width: 250px;
+      height: 250px;
     }
     .back{
       overflow:scroll;
@@ -277,29 +268,29 @@ cd
   /* Specific styling for 375px width */
   @media (max-width: 375px) {
     .gradient-border {
-      width: 150px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
     }
 
     .event-title {
-      font-size: 0.5rem;
+      font-size: 0.75rem;
     }
 
     .event-details {
-      font-size: 0.4rem;
+      font-size: 0.65rem;
     }
 
     .event-description {
-      font-size: 0.42rem;
+      font-size: 0.65rem;
     }
 
     .register-button {
-      font-size: 0.4rem;
-      padding: 4px 5px;
+      font-size: 0.65rem;
+      padding: 6px 8px;
     }
 
     .back-content {
-      gap: 0.5px; /* Further reduced gap */
+      gap: 4px; /* Further reduced gap */
     }
   }
 

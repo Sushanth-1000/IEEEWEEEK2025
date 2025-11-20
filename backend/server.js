@@ -27,6 +27,16 @@ app.use(cors({
 }));
 app.use(express.json());
 
+app.use('/images', express.static(path.join(__dirname, 'images'), {
+  fallthrough: false // This will throw 404 if file not found
+}));
+
+// Error handling for static files
+app.use('/images', (err, req, res, next) => {
+  console.error('Static file error:', err);
+  res.status(404).send('Image not found');
+});
+
 // Routes
 console.log("Setting up routes...");
 app.use('/images', express.static(path.join(__dirname, 'images')));
@@ -36,7 +46,7 @@ app.use('/api/sponsors', sponsorRoutes);
 app.use("/api/schedule", scheduleRouter);
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "build")));
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
