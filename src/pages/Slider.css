@@ -40,7 +40,10 @@ body {
   overflow: hidden;
   background-color: #1e1e1e;
   /* Transitions must match React logic */
-  transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.8); /* Darker background */
+  box-shadow: 0 0 0px rgba(0, 240, 255, 0); /* Default state */
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* Image Handling */
@@ -49,6 +52,7 @@ body {
   height: 100%;
   object-fit: cover; 
   display: block;
+  transition: filter 0.5s;
 }
 
 /* --- RESTORED FUNCTIONALITY: REFLECTION --- */

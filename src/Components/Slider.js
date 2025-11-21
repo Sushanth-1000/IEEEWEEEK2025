@@ -19,12 +19,15 @@ const Slider = (props) => {
 
   const getStyles = (index) => {
     if (activeSlide === index) {
-      return {
-        opacity: 1,
-        transform: "translateX(0px) translateZ(0px) rotateY(0deg)",
-        zIndex: 10
-      };
-    } 
+  return {
+    opacity: 1,
+    transform: "translateX(0px) translateZ(0px) rotateY(0deg)",
+    zIndex: 10,
+    boxShadow: "0 0 30px rgba(0, 240, 255, 0.4)", // THE NEON GLOW
+    border: "1px solid #00f0ff", // THE NEON BORDER
+    filter: "grayscale(0%)" // Color only on active
+  };
+}
     else if (activeSlide - 1 === index) {
       return {
         opacity: 1,
@@ -103,10 +106,6 @@ const Slider = (props) => {
               className="slider-image"
             />
           </div>
-          <div
-            className="reflection"
-            style={getStyles(i)}
-          />
         </React.Fragment>
       ))}
     </div>

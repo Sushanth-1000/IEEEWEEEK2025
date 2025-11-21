@@ -30,15 +30,9 @@ useEffect(() => {
         color: 0xc7c8e5,
         backgroundColor: 0x10111d,
         
-        // 2. DYNAMIC CONFIGURATION
-        // If mobile, use fewer points (10), else use standard (20)
-        points: isMobile ? 10.00 : 20.00, 
-        
-        // If mobile, reduce connection distance so lines don't cross the whole screen
-        maxDistance: isMobile ? 18.00 : 22.00, 
-        
-        // If mobile, increase spacing so it looks cleaner
-        spacing: isMobile ? 25.00 : 18.00, 
+        points: isMobile ? 10.00 : 17.00, 
+        maxDistance: isMobile ? 18.00 : 19.00, 
+        spacing: isMobile ? 25.00 : 20.00, 
         
         showDots: false
       });
