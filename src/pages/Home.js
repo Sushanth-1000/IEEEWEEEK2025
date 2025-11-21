@@ -96,7 +96,7 @@ useEffect(() => {
           <div className="flagship-event">
             <img src="./images/sod.png" alt="Flagship Event Poster" className="poster" />
             <div className="description">
-              <h3>Science of Deduction 5.0</h3>
+              <h3>Science of Deduction 6.0</h3>
               <p>Science of Deduction challenges teams to reopen a closed murder investigation. Analyze forensic inconsistencies, decode digital evidence, and reconstruct the timeline to expose a corporate conspiracy. Use logic and observation to distinguish the scapegoat from the true mastermind.<br/><br/>Date:27th November, 2025<br/>Time:2:00 PM - 5:00 PM</p>
               <a href="https://forms.gle/H9vzkiGMmd3N4zbDA" target='__blank'>
                 <button className="know-more-button">Register Now!</button>
