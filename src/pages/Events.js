@@ -57,7 +57,7 @@ const Events = () => {
                 {flagshipEvents.length > 0 && (
                     <>
                         <h1>Flagship Events</h1>
-                        <div className="events-section flagship-events">
+                        <div className="events-section">
                             {flagshipEvents.map(event => (
                                 <EventCard key={event._id} event={event} />
                             ))}

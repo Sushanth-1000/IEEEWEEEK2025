@@ -251,17 +251,17 @@ const StyledWrapper = styled.div`
     }
 
     .event-details {
-      font-size: 0.75rem;
+      font-size: 0.5rem;
       margin-top:1rem;
     }
 
     .event-description {
-      font-size: 0.7rem;
+      font-size: 0.45rem;
     }
 
     .register-button {
       font-size: 0.75rem;
-      padding: 8px 10px;
+      padding: 6px 8px;
     }
   }
 
@@ -273,15 +273,15 @@ const StyledWrapper = styled.div`
     }
 
     .event-title {
-      font-size: 0.75rem;
+      font-size: 0.4rem;
     }
 
     .event-details {
-      font-size: 0.65rem;
+      font-size: 0.4rem;
     }
 
     .event-description {
-      font-size: 0.65rem;
+      font-size: 0.4rem;
     }
 
     .register-button {
